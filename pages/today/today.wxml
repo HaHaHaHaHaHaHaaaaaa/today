@@ -1,2 +1,18 @@
 <!--pages/today/today.wxml-->
-<text>pages/today/today.wxml</text>
+<view class="c">
+  <view wx:for="{{hisdata}}" wx:key="index" class='ct'>
+    <view class="t1">
+      <view class='date'>
+      {{funcs.slice(item.date,0,4)}}
+      <text class='month'>{{funcs.slice(item.date,4)}}</text>
+      </view>
+      <text class='title'>{{item.title}}</text>
+    </view>
+    <view class='c1' style="height: {{index===openIndex ? 'auto':'60px'}} ;overflow:{{index===openIndex  ? 'auto':'hidden'}}">
+      <text  data-index="{{index}}" bindtap='showMore'>{{item.event}}</text>
+      <image class="more" src="{{ index===openIndex ? '../../images/open.png':'../../images/close.png'}}" data-index="{{index}}" bindtap='showMore'></image>
+    </view>
+  </view>
+</view>
+
+<wxs src="../../utils/func.wxs" module="funcs" />

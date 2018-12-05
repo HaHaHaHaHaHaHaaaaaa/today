@@ -1,1 +1,60 @@
 /* pages/today/today.wxss */
+
+.c {
+  margin: 10px;
+  background:#efefef;
+
+}
+
+.ct {
+  margin-bottom: 5px;
+  border-radius: 6px;
+  background: #fff;
+  padding:8px;
+}
+
+
+.t1{
+  padding: 7px;
+}
+
+.date {
+  font-size: 24px;
+  font-weight: 500;
+  padding-right: 6px;
+  color: orange;
+  font-style:italic;
+}
+
+.month{
+  font-size: 14px;
+  color: #585858;
+  font-weight: 450;
+  font-style: normal
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 400;
+  color: #707070;
+}
+
+.c1 {
+  font-size: 14px;
+  color: rgb(37, 37, 37);
+  height: 60px;
+  overflow: hidden;
+  position: relative
+}
+
+.c1 text{
+  color: #999
+}
+
+.more{
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  width: 30px;
+  height: 30px;
+}

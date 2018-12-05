@@ -1,12 +1,35 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/today/today"
+    "pages/today/today",
+    "pages/me/me"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#da3131",
     "navigationBarTitleText": "时宜今天",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "light"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/today/today",
+        "text": "历史",
+        "iconPath": "images/component_normal.png",
+        "selectedIconPath": "images/component_selected.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "今日",
+        "iconPath": "images/component_normal.png",
+        "selectedIconPath": "images/component_selected.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/component_normal.png",
+        "selectedIconPath": "images/component_selected.png"
+      }
+    ]
   }
 }
